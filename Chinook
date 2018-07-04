@@ -1,0 +1,136 @@
+/* create table Person (
+id integer primary key autoincrement,
+  name varchar(60),
+  Age integer,
+  Height integer,
+  City varchar(30), 
+  FavoriteColor varchar(20)
+); */
+
+
+/* insert into Person 
+(name,Age,Height,City,FavoriteColor)
+values 
+  ('Josh',29,1.6,'Dallas','Blue'),
+   ('Sam',27,1.7,'Red Oak','Black'),
+   ('Noah',30,1.5,'Arlington','Red'),
+   ('Matt',21,1.9,'Austin','White'),
+   ('Rayn',20,2,'Houston','Yellow'); */
+   
+/*  select * from Person;
+ */
+ 
+ 
+/*  select * from Person order by Height asc;
+  */
+/*   select * from Person order by Height desc; */
+
+
+/* select * from Person order by Age asc;
+ */
+
+/* select * from Person order by Age desc; */
+
+
+
+/* select * from Person where Age>20; */
+
+
+
+
+/* select * from Person where Age=18; */
+
+
+/* select * from Person where Age=18; */
+
+/* select * from Person where Age between 20 and 30 */
+
+
+/* select * from Person where age!=27; */
+
+/* select * from Person where FavoriteColor!='Red';
+ */
+ 
+/*  select * from Person where FavoriteColor!='Red' and FavoriteColor!='Blue'; */
+
+
+/* select * from Person where FavoriteColor='Orange' or FavoriteColor='Green'; */
+
+
+
+/*  select * from Person where FavoriteColor in ('Orange','Green','Blue') */
+
+
+ 
+/* select * from Person where FavoriteColor in ('Yellow','Purple') */
+
+
+
+/* create table Orders (
+id integer primary key autoincrement,
+  ProductName varchar(60),
+  ProductPrice integer,
+  Quantity integer
+);
+ */
+
+/* insert into Orders
+(ProductName,ProductPrice,Quantity)
+values 
+('phone',1000,1),
+('computer',2000,4),
+('screen',3213,4); */
+
+
+/* select * from Orders; */
+
+/* select round(sum(Quantity)) from Orders; */
+
+
+
+/* select round(sum(ProductPrice)) from Orders; */
+
+/* select round(sum(ProductPrice * Quantity)) from Orders where id=1; */
+
+
+/* insert into Artist ( Name ) VALUES ( 'josh','sam','noah' ); */
+
+/* select * from Artist order by Name desc limit 10; */
+
+
+/* select * from artist where Name like 'Black%' */
+
+
+/* select * from artist where Name like '%Black%' */
+
+/* select count (*) from Invoice where BillingCountry='USA' */
+
+
+/* select max(total) from Invoice; */
+
+/* select min(total) from Invoice; */
+
+/* select * from Invoice where total>5 */
+
+/* select count(*) from Invoice where total<5; */
+
+
+
+
+/* select count(*) from Invoice where BillingState in ('CA', 'TX', 'Az'); */
+
+/* select avg(total) from Invoice;  */
+
+/* select sum(total) from invoice; */
+
+
+
+/* select FirstName, LastName from Employee where City='Calgary'; */
+
+/* select FirstName, LastName, max(BirthDate) from Employee; */
+/* select FirstName, LastName, min(BirthDate) from Employee; */
+
+/* select * from Employee where ReportsTo=2; */
+
+
+/* select count(*) from Employee where City='Lethbridge'; */
